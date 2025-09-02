@@ -1,5 +1,5 @@
 {
-    "address": "0x3d221e1350edabdf023148a1be678617e148f35c",
+    "address": "",
     "chat": "https://huggingface.co/Tobivictor/Qwen2.5-Omni-7B-GGUF/resolve/main/Qwen2.5-Omni-7B-Q4_K_M.gguf",
     "chat_batch_size": "128",
     "chat_ctx_size": "8192",
