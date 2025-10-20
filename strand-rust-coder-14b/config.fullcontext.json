@@ -16,7 +16,7 @@
   "embedding_name": "nomic-embed",
   "embedding_ctx_size": "8192",
   "embedding_batch_size": "8192",
-  "snapshot": "https://huggingface.co/datasets/gaianet/learn-rust/resolve/main/rust-books.snapshot.tar.gz",
+  "snapshot": "https://huggingface.co/datasets/gaianet/learn-rust/resolve/main/rpl-rbe-dar.snapshot.tar.gz",
   "embedding_collection_name": "default",
   "qdrant_limit": "1",
   "qdrant_score_threshold": "0.2",
