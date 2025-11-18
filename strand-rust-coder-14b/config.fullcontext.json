@@ -1,25 +1,32 @@
 {
   "address": "",
-  "description": "A highly specialized Rust coding model (Strand-Rust-Coder-14B-v1) fine-tuned from Qwen2.5-Coder.",
+  "chat": "https://huggingface.co/Fortytwo-Network/Strand-Rust-Coder-14B-v1-GGUF/resolve/main/Fortytwo_Strand-Rust-Coder-14B-v1-Q4_K_M.gguf",
+  "chat_batch_size": "128",
+  "chat_ctx_size": "8192",
+  "chat_name": "fortytwo-strand-rust-coder-14b",
+  "description": "Fortytwo Strand Rust Coder 14B - Highly specialized Rust coding model fine-tuned from Qwen2.5-Coder-14B.",
   "domain": "gaia.domains",
+
+  "embedding": "https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf",
+  "embedding_batch_size": "8192",
+  "embedding_ctx_size": "8192",
+  "embedding_name": "nomic-embed",
+  "embedding_collection_name": "default",
+
   "llamaedge_port": "8080",
   "llamaedge_chat_port": "9068",
   "llamaedge_embedding_port": "9069",
-  "chat": "https://huggingface.co/Fortytwo-Network/Strand-Rust-Coder-14B-v1-GGUF/resolve/main/Fortytwo_Strand-Rust-Coder-14B-v1-Q4_K_M.gguf",
-  "chat_name": "strand-rust-coder-14b",
-  "chat_ctx_size": "32768",
-  "chat_batch_size": "128",
+
   "prompt_template": "qwen2",
   "reverse_prompt": "",
+
   "system_prompt": "You are an expert-level Rust programmer. Your purpose is to generate, analyze, and refactor Rust code with a deep understanding of ownership, lifetimes, and the borrow checker. Keep your responses concise and focused on providing high-quality, idiomatic Rust code and explanations. Format your response in markdown.",
-  "embedding": "https://huggingface.co/gaianet/Nomic-embed-text-v1.5-Embedding-GGUF/resolve/main/nomic-embed-text-v1.5.f16.gguf",
-  "embedding_name": "nomic-embed",
-  "embedding_ctx_size": "8192",
-  "embedding_batch_size": "8192",
-  "snapshot": "https://huggingface.co/datasets/gaianet/learn-rust/resolve/main/rpl-rbe-dar.snapshot.tar.gz",
-  "embedding_collection_name": "default",
+
+  "rag_policy": "system-message",
+  "rag_prompt": "You are an experienced Rust developer. You will be asked to write or review code using Rust knowledge and best practices in the context below. You will be working with source code files in a typical Cargo project. The cargo.toml file contains the dependencies for external libraries and crates. The src/ directory contains main.rs or lib.rs or other Rust source code files. The project may also have SQL, text, HTML, Javascript, CSS and Python files. The user will give you the specific code files you need to work on.\n\n# Context for Rust knowledge related to the user task\n\n{{context}}\n\n# User Task\n\n{{user_message}}",
+
   "qdrant_limit": "1",
   "qdrant_score_threshold": "0.2",
-  "rag_policy": "system-message",
-  "rag_prompt": "You are an experienced Rust developer. You will be asked to write or review code using Rust knowledge and best practices in the context below. You will be working with source code files in a typical Cargo project. The cargo.toml file contains the dependencies for external libraries and crates. The src/ directory contains main.rs or lib.rs or other Rust source code files. The project may also have SQL, text, HTML, Javascript, CSS and Python files. The user will give you the specific code files you need to work on.\n\n# Context for Rust knowledge related to the user task\n\n{{context}}\n\n# User Task\n\n{{user_message}}"
+
+  "snapshot": "https://huggingface.co/datasets/gaianet/learn-rust/resolve/main/rpl-rbe-dar.snapshot.tar.gz"
 }
