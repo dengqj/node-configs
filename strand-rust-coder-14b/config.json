@@ -2,7 +2,7 @@
   "address": "",
   "chat": "https://huggingface.co/Fortytwo-Network/Strand-Rust-Coder-14B-v1-GGUF/resolve/main/Fortytwo_Strand-Rust-Coder-14B-v1-Q4_K_M.gguf",
   "chat_batch_size": "128",
-  "chat_ctx_size": "8192",
+  "chat_ctx_size": "4096",
   "chat_name": "fortytwo-strand-rust-coder-14b",
   "description": "Fortytwo Strand Rust Coder 14B - Highly specialized Rust coding model fine-tuned from Qwen2.5-Coder-14B.",
   "domain": "gaia.domains",
